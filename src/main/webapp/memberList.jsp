@@ -8,6 +8,13 @@
 <title>회원리스트</title>
 </head>
 <body>
+<%
+	if(session.getAttribute("admin")==null) {
+		response.sendRedirect("login.jsp");
+	}
+
+%>
+
 <h2>회원 리스트</h2>
 <hr>
 <%
